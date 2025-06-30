@@ -2,6 +2,12 @@
 
 A sophisticated web application that provides AI-powered mock interviews with real-time voice interaction, instant feedback, and personalized question generation. Built with modern web technologies and integrated with advanced AI services.
 
+## Demo Video
+
+Watch a full walkthrough of PrepEasy in action:
+
+[Watch the 10-minute demo on Google Drive](https://drive.google.com/drive/folders/1QdrkNaSJrTcRXbSIBJwAR-1oCbG-g4AB?dmr=1&ec=wgc-drive-globalnav-goto)
+
 ## Table of Contents
 - Introduction
 - Tech Stack
@@ -54,8 +60,8 @@ Make sure you have the following installed on your machine:
 ### Cloning the Repository
 
 ```bash
-git clone https://github.com/Mansimishra19/PrepWise.git
-cd PrepWise
+git clone https://github.com/Mansimishra19/PrepEasy.git
+cd PrepEasy
 ```
 
 ### Installation
@@ -144,7 +150,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 For questions, issues, or feature requests:
 - Create an issue in the GitHub repository
-- Contact: [your-email@example.com]
+- Contact: mansim1404@gmail.com
 
 ---
 
