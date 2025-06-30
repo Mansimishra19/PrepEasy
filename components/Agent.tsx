@@ -28,6 +28,11 @@ const Agent = ({
   feedbackId,
   type,
   questions,
+  role,
+  level,
+  techstack,
+  amount,
+  interviewType,
 }: AgentProps) => {
   const router = useRouter();
   const [callStatus, setCallStatus] = useState<CallStatus>(CallStatus.INACTIVE);
@@ -120,16 +125,20 @@ const Agent = ({
     if (type === "generate") {
       await vapi.start(
         undefined,
+        undefined,
+        undefined,
+        process.env.NEXT_PUBLIC_VAPI_WORKFLOW_ID!,
         {
           variableValues: {
-            username: userName,
+            name: userName,
+            role: (typeof role !== 'undefined' ? role : ""),
+            level: (typeof level !== 'undefined' ? level : ""),
+            techstack: (typeof techstack !== 'undefined' ? techstack : ""),
+            amount: (typeof amount !== 'undefined' ? amount : 5),
+            type: (typeof interviewType !== 'undefined' ? interviewType : "technical"),
             userid: userId,
           },
-          clientMessages: "transcript",
-          serverMessages: undefined,
-        },
-        undefined,
-        generator
+        }
       );
     } else {
       let formattedQuestions = "";
@@ -143,8 +152,6 @@ const Agent = ({
         variableValues: {
           questions: formattedQuestions,
         },
-        clientMessages: "transcript",
-        serverMessages: undefined,
       });
     }
   };
