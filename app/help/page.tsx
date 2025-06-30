@@ -8,7 +8,7 @@ export default function HelpPage() {
       </div>
       <div>
         <h2 className="text-xl font-semibold mb-2">Contact Us</h2>
-        <p>If you need further assistance, email us at <a href="mailto:support@prepwise.com" className="text-blue-600 underline">support@prepwise.com</a>.</p>
+        <p>If you need further assistance, email us at <a href="mailto:support@prepeasy.com" className="text-blue-600 underline">support@prepeasy.com</a>.</p>
       </div>
     </div>
   );

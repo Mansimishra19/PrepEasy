@@ -17,7 +17,7 @@ export default function Header() {
 
   return (
     <header className="flex justify-between items-center p-4 bg-dark-200">
-      <div className="text-2xl font-bold">PrepWise</div>
+      <div className="text-2xl font-bold">PrepEasy</div>
       <div className="relative">
         <button
           className="rounded-full bg-gray-200 w-10 h-10 flex items-center justify-center focus:outline-none"
